@@ -1,0 +1,51 @@
+#body{
+    width: 100%;
+    height: 100%;
+}
+
+#mainHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainMiddle{
+    /* border: 5px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 5%;
+}
+
+.box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.investorImg{
+    height: 70%;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+
+}
+
+.investorImg>img{
+    width: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+    margin-top: 10px;
+}
+
+.investorDetails, #details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.investorDetails>img{
+    height: 4rem;
+}
+
+#details h4,p{
+    margin: 5px;
+    display: block;
+}
