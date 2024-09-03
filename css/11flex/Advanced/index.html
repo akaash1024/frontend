@@ -1,0 +1,77 @@
+<div class="wrapper">
+  <div class="a1">A1</div>
+  <div class="a2">A2</div>
+  <div class="a3">A3</div>
+  <div class="a4">A4</div>
+
+  <div class="b1">B1</div>
+  <div class="b2">B2</div>
+
+  <div class="c1">C1</div>
+</div>
+
+<style>
+  /* Background Styles start */
+
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 30px;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .wrapper {
+    background-color: gold;
+    border: 3px dashed black;
+    padding: 20px;
+  }
+
+  div {
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    font-size: 20px;
+    /*   flex-basis: 100%; */
+  }
+
+  div:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+
+  /* medium and larger screens */
+  @media (min-width: 576px) {
+    .wrapper {
+      flex-direction: row;
+    }
+
+    .a1,
+    .a2,
+    .a3,
+    .a4 {
+      flex-basis: 23.5%;
+    }
+
+    .b1,
+    .b2 {
+      flex-basis: 49%;
+    }
+
+    .c1 {
+      flex-basis: 100%;
+    }
+  }
+</style>

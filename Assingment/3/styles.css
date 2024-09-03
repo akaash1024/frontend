@@ -1,0 +1,9 @@
+body{
+    border: 1px solid red;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: cen;
+}
