@@ -1,27 +1,63 @@
-/* img{
-    height: 50px;
-    width: 50px;
+/* body{
+    background-color: rgb(65, 65, 114);
+} */
+
+header{
+    display: flex;
+    justify-content: space-around;
 }
 
 #navbar{
     display: flex;
-    height: 70vh;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header button{
     color: red;
-    background-color: yellow;
-    justify-content: flex-end;
-    align-items: flex-start;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 3px;
+    width: 5rem;
+    height: 40px;
+    letter-spacing: 1;
+}
+
+.logoKreditBee{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.headerNavImg img{
+    height: 3rem;
+    width: 3rem;
+}
+
+/* <!-- Main Part --> */
+
+.whyKreditBeeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    letter-spacing: .5px;
+}
+.whyKreditBeeText > p{
+    margin: auto;
+    width: 11%;
+    height: .10%;
+    border: .20rem solid #FDC039;
+    border-radius: 5px;
+    margin-top: -15px;
     
 }
 
-
-#navLogoImg{
-    position: absolute;
-    left: 10px;
-    height: 100px;
-    width: 150px;
+/* mainBoxContainer */
+.mainBoxContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
 }
-
- */
-
-
- 
