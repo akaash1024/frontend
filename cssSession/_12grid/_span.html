@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        grid-template-rows: repeat(3, 100px); /* 3 rows */
+      }
+
+      .item1 {
+        grid-column: span 2; /* Item 2 columns tak extend karega */
+        grid-row: span 2; /* Item 2 rows tak extend karega */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">Item 1</div>
+      <div class="item2">Item 2</div>
+      <div class="item3">Item 3</div>
+    </div>
+  </body>
+</html>
+
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <style>
+ body {
+   background-color:#E7E9EB;
+ }
+ #myDIV {
+   height:300px;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto;
+   display: grid;
+   gap: 10px;
+   background-color: #2196F3;
+   padding: 10px;
+ }
+ #myDIV div {
+   background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+ }
+ .item3 {grid-column:span 2;}
+ </style>
+ </head>
+ <body>
+ 
+ <h1>The grid-auto-flow property</h1>
+ 
+ <div id="myDIV">
+   <div class="item1">1</div>
+   <div class="item2">2</div>
+   <div class="item3">3</div>
+   <div class="item4">4</div>
+ </div>
+ 
+ </body>
+ </html>
+ 
+
+---------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+  font-weight: 700;
+  font-family: sans-serif;
+  color: white;
+  background-color: dodgerblue;
+  border: 1px solid #333;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+}
+
+/* Styling specific boxes */
+.box-3,
+.box-6,
+.box-9,
+.box-12 {
+  background-color: gold;
+  color: black;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box box-1">Box 1</div>
+    <div class="box box-2">Box 2</div>
+    <div class="box box-3">Box 3</div>
+    <div class="box box-4">Box 4</div>
+    <div class="box box-5">Box 5</div>
+    <div class="box box-6">Box 6</div>
+    <div class="box box-7">Box 7</div>
+    <div class="box box-8">Box 8</div>
+    <div class="box box-9">Box 9</div>
+    <div class="box box-10">Box 10</div>
+    <div class="box box-11">Box 11</div>
+    <div class="box box-12">Box 12</div>
+  </main>
+</body>
+</html>

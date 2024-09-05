@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+
+        /* <!-- ------------------
+        Basis
+        flex-direction: row;
+        flex-basis: width; //working with main-axis
+
+        flex-direction: column;
+        flex-basis: height; //working with cross-axis
+
+        not applied on parent --> */
+
+
+    .container {
+        color: white;
+        border: 5px solid gold;
+        display: flex;
+        height: 70vh;
+        justify-content: flex-end;
+        align-items: center;
+    }
+        
+
+    /* .green{
+        order: 1;
+    } */
+
+    
+    .red{
+        align-self: flex-start;
+    }
+    
+    .red {
+      background-color: #eb4d4b;
+    }
+
+    .orange {
+      background-color: #f0932b;
+    }
+
+    .yellow {
+      background-color: #f6e58d;
+    }
+
+    .green {
+      background-color: #6ab04c;
+    }
+
+    .blue {
+      background-color: #4834d4;
+    }
+
+    .indigo {
+      background-color: #30336b;
+    }
+
+    .purple {
+      background-color: #be2edd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="red">Red</div> -->
+     <img src="#" alt="logo" class="red">
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+
+
+</html>
+
+
+

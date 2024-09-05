@@ -57,7 +57,76 @@ header button{
 
 /* mainBoxContainer */
 .mainBoxContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat();
+    justify-content: space-around;
+    margin: 4rem 2rem;
+    gap: 15px;
+}
+
+.box{  
+    padding-left: 10px;
+}
+
+/* blog part */
+
+.blogBoxContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(1,auto);
+    justify-content: space-around;
+    margin: 4rem 2rem;
+    gap: 15px;
+}
+.blogBoxContainer img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blogBox{
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+}
+
+.blogBoxContainer p,h3{
+    padding-left: 1rem;
+}
+
+/* signin part */
+
+#signPart{
+    background-color: #3e3b2f;
+    /* background-color: #FFDE59; */
+    height: 35rem;
+    border: 5px solid red;
+    padding: 4rem 20px 20px 0px;
+}
+
+.signForm{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    height: 500px;
+    margin: -10px 30% 0 30%;
+    padding-top: 10px;
+    background-color: rgb(55, 53, 48);
+    
+}
+
+form{
+    height: 300px;
+    width: 80%;
+}
+
+form label{
+    text-align: left;
+}
+
+button{
+    width: 80%;
+    background-color: #3470E4;
+    color: white;
+    border-radius: 5px;
 }

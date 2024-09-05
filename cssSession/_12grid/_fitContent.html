@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: fit-content(200px) min-content max-content;
+          gap: 10px;
+        }
+      
+        .grid-container div {
+          border: 2px dashed;
+          padding: 10px;
+          background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>Short content</div>
+        <div>LongWordWithoutBreaks</div>
+        <div>This is a longer sentence that could stretch the column.</div>
+      </div>
+      
+</body>
+</html>
+
+```
+### Behavior:
+1. **First column (`fit-content(200px)`)**: It will fit the content up to **200px**. If the content is shorter, the column will be smaller.
+2. **Second column (`min-content`)**: The column will shrink to the smallest possible size to fit the longest unbreakable word.
+3. **Third column (`max-content`)**: The column will expand as much as necessary to display all the content without wrapping.
+```
