@@ -1,8 +1,11 @@
-/* body{
-    background-color: rgb(65, 65, 114);
-} */
+body{
+    /* background-color: rgb(65, 65, 114); */
+    width: 90%;
+    margin: auto;
+}
 
 header{
+    margin-top: 5%;
     display: flex;
     justify-content: space-around;
 }
@@ -25,10 +28,11 @@ header button{
 }
 
 .logoKreditBee{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100px;
+    /* display: flex; */
+    /* align-items: flex-start; */
+    position: relative;
+    height: 1rem;
+    width: 10rem;
 }
 
 .headerNavImg img{
@@ -37,6 +41,14 @@ header button{
 }
 
 /* <!-- Main Part --> */
+
+.arrowImg{
+    position: relative;
+    width: 10px;
+    height: 5px;
+    margin-top: 28px;
+    left: 5px;
+}
 
 .whyKreditBeeText{
     display: flex;
@@ -55,6 +67,8 @@ header button{
     
 }
 
+
+
 /* mainBoxContainer */
 .mainBoxContainer{
     display: grid;
@@ -67,6 +81,16 @@ header button{
 
 .box{  
     padding-left: 10px;
+    border: 2px solid #E8E8E8;
+
+}
+
+.mainBoxContainer p,h3{
+    padding-left: .5rem;
+    font-size: 18px;
+}
+.mainBoxContainer img{
+    margin-top: 15px;
 }
 
 /* blog part */
@@ -97,10 +121,11 @@ header button{
 /* signin part */
 
 #signPart{
-    background-color: #3e3b2f;
+    background-color: #FFDE59;
     /* background-color: #FFDE59; */
-    height: 35rem;
-    border: 5px solid red;
+    height: 30rem;
+    margin: 0;
+    /* border: 5px solid red; */
     padding: 4rem 20px 20px 0px;
 }
 
@@ -108,17 +133,21 @@ header button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: 450px;
     margin: -10px 30% 0 30%;
     padding-top: 10px;
-    background-color: rgb(55, 53, 48);
+    background-color:white;
     
 }
 
+
+
+
 form{
-    height: 300px;
+    height: 250px;
     width: 80%;
 }
+
 
 form label{
     text-align: left;
@@ -129,4 +158,15 @@ button{
     background-color: #3470E4;
     color: white;
     border-radius: 5px;
+}
+
+
+
+/* footer */
+footer{
+    text-align: center;
+    background-color: #282120;
+    margin: 0;
+    padding: 15px;
+    color: white;
 }
