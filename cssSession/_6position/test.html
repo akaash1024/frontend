@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
+
+      .innerMainDiv {
+        position: relative;
+      }
+
+      /* this is now workig based on root (body) */
+      .innerMainDiv span {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="main"
+      style="color: rgb(107, 107, 186); border: 1px solid gold; padding: 0.5rem"
+    >
+      <div class="innerMainDiv" style="border: 1px solid blue">
+        <p style="border: 3px solid pink; margin: 2px">Akash</p>
+        <span style="background-color: aqua; margin: 5px">SPAN</span>
+      </div>
+
+      <div class="innerMainDiv" style="border: 1px solid blue">
+        <p style="border: 3px solid pink; margin: 2px">Akash</p>
+        <span style="background-color: aqua; margin: 5px">SPAN</span>
+      </div>
+
+      <div class="innerMainDiv" style="border: 1px solid blue">
+        <p style="border: 3px solid pink; margin: 2px">Akash</p>
+        <span style="background-color: aqua; margin: 5px">SPAN</span>
+      </div>
+    </div>
+  </body>
+</html>
