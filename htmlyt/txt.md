@@ -1,7 +1,4 @@
-#alt+Z or alt > view > word wrap
-just
 
-<pre></pre>
 
 p>lorem25
 or simple , <p>lorem5</p>
@@ -73,3 +70,31 @@ link:css
     <audio src=""></audio>
 </body>
 ```
+
+
+
+
+| Tag | Description | Usecase |
+| --- | --- | --- |
+| `p` | Paragraph | Structure main content |
+| `h1-h6` | Headings (levels 1-6) | Page and section titles |
+| `br` | Line Break | Create new lines within text |
+| `hr` | Horizontal Rule | Separate content visually |
+| `mark` | Highlight | Highlight parts of text |
+| `cite` | Citation | Reference a title of a work |
+| `dfn` | Definition | Define a term |
+| `bdi` | Bi-directional Isolation | Text with a different direction |
+| `bdo` | Bi-directional Override | Reverse text direction |
+| `samp` | Sample Output | Show sample system output |
+| `kbd` | Keyboard Input | Indicate keyboard input |
+| `var` | Variable | Name a variable in math/programming |
+| `i` | Italic | Emphasize text |
+| `b` | Bold | Emphasize text strongly |
+| `small` | Small Print | Display side comments/legalese |
+| `del` | Deleted Text | Indicate deleted text |
+| `ins` | Inserted Text | Indicate added text |
+| `sub` | Subscript | Display text below the line |
+| `sup` | Superscript | Display text above the line |
+| `ol` | Ordered List | List items in numbered format |
+| `ul` | Unordered List | List items in bulleted format |
+| `dl` | Definition List | List terms with definitions |

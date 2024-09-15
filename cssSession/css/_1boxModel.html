@@ -1,0 +1,48 @@
+<!-- 
+The CSS Box Model
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins. 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 320px; //width here, 320+(padding left 10 + right 10) + (border left 5 + right 5 ) = 350
+  height: 50px; //height here, 50+(padding top 10 + bottom 10) + (border top 5 + bottom 5 ) = 80
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<h2>Calculate the total width:</h2>
+
+<img src="klematis4_big.jpg" width="350" height="263" alt="Klematis">
+<div>The picture above is 350px wide. The total width of this element is also 350px. The total height of this element is 80px.</div>
+
+</body>
+</html>
+
+  320px (width of content area)
++ 20px (left padding + right padding)
++ 10px (left border + right border)
+= 350px (total width)
+
+  50px (height of content area)
++ 20px (top padding + bottom padding)
++ 10px (top border + bottom border)
+= 80px (total height)
+
+Total element width = width + left padding + right padding + left border + right border
+
+Total element height = height + top padding + bottom padding + top border + bottom border
+
+
+
+
+
+
+-->

@@ -29,7 +29,7 @@ Selector :: pseudo-elements
 ------------------
 Basis
 flex-direction: row;
-flex-basis: width; //working with main-axis
+flex-basis: 100px; //working with main-axis (width)
 
 flex-direction: column;
-flex-basis: height; //working with cross-axis
+flex-basis: 220px; //working with cross-axis (height)
